@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>projects</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a><li>
+        <li><a href="/project">Projects</a></li>
+        <li><a href="/contacts">Contacts</a></li>
+
+    </ul>
+</nav>
+</body>
+</html>
+<main>
+    <h1>My Projects</h1>
+    <ul>
+        {% for project in projects %}
+        <li>
+            <h2>{{ projects.name }}</h2>
+            <p>{{ project.description }}</p>
+            <p><strong>Thechnologies used:</strong> Flask, SQLALchemy, Bootstrap</p>
+        </li>
+        {% endfor %}
+    </ul>
+</main>
+
+<img style="width:400px" src="{{url_for('static', filename='images/zoya.jpg') }}" alt="Contact Image">

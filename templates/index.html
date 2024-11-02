@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>my portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a><li>
+        <li><a href="/project">Projects</a></li>
+        <li><a href="/contacts">Contacts</a></li>
+
+   </ul>
+</nav>
+<h1>{{welcome_msg}}</h1>
+<p>We're thrilled to have you with us. Get ready for a memorable time and a great experience.</p>
+<section>
+    <h2>Latest project</h2>
+    <p>Stay tuned for updates on my latest projects and achievements. I am constantly working on new and excting things!</p>
+</section>
+<section>
+    <h2>Featured project</h2>
+    <p>Check out my latest project: It's a web application desingned to help users manage their tasks efficiently.</p>
+</section>
+</body>
+</html>
+
+ <div id="images">
+     <img style="width:400px" src="{{url_for('static' , filename='images/123.jpg') }}"/>
+ </div>
+

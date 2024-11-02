@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>about</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a><li>
+        <li><a href="/project">Projects</a></li>
+        <li><a href="/contacts">Contacts</a></li>
+
+    </ul>
+</nav>
+</body>
+</html>
+<main>
+    <h1>{{my_name}}</h1>
+    <p>{{my_description}}</p>
+</main>
+
+<section>
+    <h2>skills</h2>
+    <ul>
+        <li>python</li>
+        <li>JavaScript</li>
+        <li>HTML & CSS</li>
+        <li>Flask & Django</li>
+        <li>React & Vue.js</li>
+    </ul>
+</section>
+
+<img style="width:400px" src="{{url_for('static', filename='images/project.jpg') }}" alt="Contact Image">

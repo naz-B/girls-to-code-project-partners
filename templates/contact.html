@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>contact</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a><li>
+        <li><a href="/project">Projects</a></li>
+        <li><a href="/contacts">Contacts</a></li>
+
+    </ul>
+</nav>
+</body>
+</html>
+<h1>Contact Me</h1>
+<p>If you have any questions or would like to get in touch,
+   feel free to reach out to me through the following channels:</p>
+<ul>
+    <li>phone: {{contact}}</li>
+    <li>Email: {{email}}</li>
+</ul>
+
+<img style="width:400px" src="{{ url_for('static', filename='images/projectpartners.jpg') }}">
